@@ -1,0 +1,249 @@
+/* CSS for the weewx Seasons skin
+ * Copyright (c) Tom Keffer, Matthew Wall
+ * Distributed under terms of GPLv3.  See LICENSE.txt for your rights.
+ * Edited by Miroslav Lach (miroslav.lach@tum.de) for the CoSESWeather-Project
+ */
+
+
+/* use the local fonts */
+@font-face {
+    font-family: 'iceland';
+    src: url('font/iceland-regular.woff2') format('woff2'),
+         url('font/iceland-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;	
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'iceland', arial, sans-serif;
+    background-color: #262626; /* main grey background color */
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #e5a244; /* Main Headline Color (golden color), link color */
+}
+
+a:link {
+    color: #e5a244; /* Main Headline Color (golden color), link color */
+}
+a:visited {
+    color: #e5a244; /* Main Headline Color (golden color), visited link color */	
+}
+a:hover {
+    color: #eac879; /* Main Sensor Value Color (brighter yellow/golden color), hover link color */
+}
+
+#tum_logo {
+    float: left;
+    padding-left: 20px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+#logo {
+    float: right;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#widget_group {
+    float: left;
+    margin-right: 40px;
+}
+
+#plot_group {
+    overflow: hidden;
+}
+
+#title_bar {
+    overflow: auto;
+    margin-bottom: 5px;
+    background-color: #161616; /* main headline black background colour */ 
+    border: 1px solid #161616; /* section seperator colour dark headline black(bigger sections: Current Conditions, History etc.) */
+	border-top: 5px solid #161616; /* main headline black background colour */ 
+	border-bottom: 5px solid #303030; /* brigther grey for header underline seperator */
+}
+
+#contents {
+    clear: both;
+    margin: 20px;
+	color: #a06d2b; /* darker gold color for timestamps and dates, secondary headline color: Current Conditions, History, Celestial etc. */
+}
+
+#title {
+    float: left;
+    margin-left: 10px;
+}
+
+#reports {
+    float: right;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    text-align: right;
+	color: #e5a244; /* Main Headline Color (golden color) , slider color (day, week, moth, year underline color) */
+}
+
+.footnote {
+    font-size: 110%;
+    font-style: italic;
+    clear: both;
+    padding-left: 20px;
+}
+
+.page_title {
+    font-size: 200%;
+    line-height: 10%;
+	color: #e5a244; /* Main Headline Color (golden color), main title color */
+}
+
+.lastupdate {
+    font-size: 110%;
+    line-height: 10%;
+	color: #db8941; /* dark gold color for fixed table labels */
+}
+
+.widget {
+    margin-bottom: 30px;
+    clear: both;
+}
+
+.widget_title {
+	font-size: 140%;
+    font-weight: bold;
+    padding: 2px 10px 2px 10px;
+    /* underlined titles */
+    border-bottom: 2px solid #161616; /* section seperator colour dark headline black(bigger sections: Current Conditions, History etc.) */
+}
+
+.label {
+    font-size: 110%;
+    vertical-align: top;
+    text-align: right;
+    padding-top: 4px;
+    padding-right: 5px;
+	color: #db8941; /* dark gold color for fixed table labels */
+}
+
+.data {
+    font-weight: normal;
+    font-size: 110%;
+    vertical-align: top;
+    text-align: left;
+    padding-top: 4px;
+	color: #eac879; /* Main Sensor Value Color (brighter yellow/golden color), sensor value data and units */
+}
+
+.units {
+    font-size: 110%;
+    vertical-align: top;
+    padding-top: 4px;
+	color: #eac879; /* Main Sensor Value Color (brighter yellow/golden color), sensor value data and units */
+}
+
+.timestamp {
+    font-size: 110%;
+    font-weight: normal;
+	color: #eac879; /* Main Sensor Value Color (brighter yellow/golden color), sensor value data and units */
+}
+
+.loval {
+    color: #eac879; /* Main Sensor Value Color (brighter yellow/golden color), windchill value color in overview table */
+}
+
+.button {
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.button_selected {
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    /* underlined buttons */
+    border-bottom: 5px solid #e5a244; /* Main Headline Color (golden color) , slider color (day, week, moth, year underline color) */
+}
+
+.widget_control {
+    float: right;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+.widget img {
+    width: 350px;
+    border: 1px solid #161616; /* section seperator colour dark headline black(bigger sections: Current Conditions, History etc.) */
+    margin-top: 4px;
+}
+
+.new_row {
+    border-top: 1px solid #303030; /* brigther grey for header underline seperator */
+}
+
+.celestial_body {
+    margin-bottom: 30px;
+    float: left;
+}
+
+.widget table th {
+	font-size: 120%;
+    font-weight: normal;
+    text-align: right;
+    border-bottom: 2px solid #161616; /* underline seperator on statistics page, dark headline color (under Today, Week, Month etc.) */	
+}
+
+#hilo_widget table th {
+    font-size: 110%;
+    text-align: right;
+    border-bottom: none;
+	color: #a06d2b; /* darker gold color for timestamps and dates */
+}
+
+#hilo_widget .data {
+    font-weight: bold;
+    font-size: 110%;
+    text-align: right;
+    padding-left: 10px;
+}
+
+#history_widget img {
+    border: none;
+    margin-bottom: 10px;
+    width: 600px; /* should match the image width in skin.conf */
+}
+
+#history_widget.widget_title {
+    min-width: 500px;
+}
+
+.plot_container {
+    margin-top: 4px;
+}
+
+#map_canvas {
+    width: 350px;
+    height: 350px;
+    margin-top: 4px;
+}
+
+
+@media (max-width:800px) {
+    #plot_group { overflow: visible; float: left; }
+}
+@media (min-width:801px) {
+    #plot_group { overflow: hidden; float: none; }
+}
