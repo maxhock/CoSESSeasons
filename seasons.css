@@ -56,8 +56,9 @@ a:hover {
 
 #widget_group {
     float: left;
-    margin-right: 40px;
+    margin-right: 20px;
     background-color: #f7f7f7;
+    font-weight: bold;
 }
 
 #plot_group {
@@ -189,6 +190,7 @@ a:hover {
     width: 350px;
     border: 1px solid #e6e6e6; /* section seperator colour dark headline black(bigger sections: Current Conditions, History etc.) */
     margin-top: 4px;
+    max-width: 100%;
 }
 
 .new_row {
@@ -213,9 +215,12 @@ a:hover {
     border-bottom: none;
 	color: #333333; /* darker gold color for timestamps and dates */
 }
+#hilo_widget .units {
+    font-weight: normal;
+}
 
 #hilo_widget .data {
-    font-weight: bold;
+    font-weight: normal;
     font-size: 110%;
     text-align: right;
     padding-left: 10px;
@@ -244,6 +249,7 @@ a:hover {
 
 @media (max-width:800px) {
     #plot_group { overflow: visible; float: left; }
+    #widget_group {margin-right: 0px;}
 }
 @media (min-width:801px) {
     #plot_group { overflow: hidden; float: none; }
