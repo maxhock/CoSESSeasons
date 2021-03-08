@@ -206,7 +206,7 @@ a:hover {
 	font-size: 120%;
     font-weight: normal;
     text-align: right;
-    border-bottom: 2px solid #e6e6e6; /* underline seperator on statistics page, dark headline color (under Today, Week, Month etc.) */	
+    border-bottom: none; /* underline seperator on statistics page, dark headline color (under Today, Week, Month etc.) */	
 }
 
 #hilo_widget table th {
