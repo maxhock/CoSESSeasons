@@ -5,7 +5,7 @@
 #errorCatcher Echo
 
 <div id="title_bar">
-  <div id="tum_logo"><a href="index.html"><img src="tum_logo.png" alt="TUM Logo" width="85" height="45"></a></div>
+  <div id="tum_logo"><a href="index.html"><img src="tum_logo.svg" alt="TUM Logo" width="85" height="45"></a></div>
   <div id="logo"><a href="index.html"><img src="icon_web.png" alt="COSESWeather Logo" width="100" height="65"></a></div>
   <div id="title">
     <h1 class="page_title">CoSES Weather-Station</h1> <p class="lastupdate">MSE, Garching Forschungszentrum</p>
