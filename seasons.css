@@ -246,11 +246,26 @@ a:hover {
     margin-top: 4px;
 }
 
+#impressum {
+    float: left;
+    width: 49%;
+    padding: 10px;
+    font-weight: normal
+}
+
+#datenschutzerklaerung {
+    float: right;
+    width: 49%;
+    padding: 10px;
+    font-weight: normal
+}
 
 @media (max-width:749px) {
     #plot_group { overflow: visible; float: left; }
     #widget_group {margin-right: 0px;}
+    #datenschutzerklaerung { overflow: visible; float: left; }
 }
 @media (min-width:750px) {
     #plot_group { overflow: hidden; float: none; }
+    #datenschutzerklaerung { overflow: hidden; float: none; }
 }
