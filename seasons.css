@@ -248,14 +248,14 @@ a:hover {
 
 #impressum {
     float: left;
-    width: 49%;
+    max-width: 600px;
     padding: 10px;
     font-weight: normal
 }
 
 #datenschutzerklaerung {
     float: right;
-    width: 49%;
+    max-width: 600px;
     padding: 10px;
     font-weight: normal
 }
@@ -267,5 +267,5 @@ a:hover {
 }
 @media (min-width:750px) {
     #plot_group { overflow: hidden; float: none; }
-    #datenschutzerklaerung { overflow: hidden; float: none; }
+    #datenschutzerklaerung { overflow: hidden; float: none; min-width: 500px; }
 }
